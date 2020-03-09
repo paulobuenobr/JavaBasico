@@ -1,9 +1,6 @@
 package teste;
 
-import oo.Cidade;
-import oo.Estado;
-import oo.Motorista;
-import oo.Veiculo;
+import oo.*;
 
 public class TesteVeiculo {
 
@@ -40,5 +37,25 @@ public class TesteVeiculo {
 
         System.out.println(v.getMotorista().getCidade().getEstado().getSigla());
 
+        Moto moto = new Moto();
+        moto.setMarca("Honda");
+        moto.setModelo("XHJ450");
+        moto.setVelocidadeMaxima(180);
+        moto.acelerar(50);
+        exibirVelocidade(moto);
+
+        Lancha lancha = new Lancha();
+        lancha.setMarca("Lanchex");
+        lancha.setModelo("Modafoca");
+        lancha.setTurbo(true);
+        lancha.acelerar(100);
+        exibirVelocidade(lancha);
+    }
+
+    // Polimorfismo de objeto
+    public static void exibirVelocidade(Veiculo veiculo) {
+        System.out.println("Marca.....: "+veiculo.getMarca());
+        System.out.println("Modelo....: "+veiculo.getModelo());
+        System.out.println("Velocidade: "+veiculo.getVelocidade());
     }
 }

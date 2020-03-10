@@ -9,8 +9,13 @@ public class Veiculo {
     private double preco; // 0
     private boolean novo; // false
     private int velocidade; // 0
-    private int velocidadeMaxima; // 0
+    protected int velocidadeMaxima; // 0
     private Motorista motorista;
+
+    // CONSTRUTORES NÃO FORNECEM HERANÇA
+    public Veiculo(int velocidadeMaxima) {
+        this.velocidadeMaxima = velocidadeMaxima;
+    }
 
     public String getMarca() {
         return marca;

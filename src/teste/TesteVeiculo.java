@@ -6,12 +6,11 @@ public class TesteVeiculo {
 
     public static void main(String[] args) {
 
-        Veiculo v = new Veiculo();
+        Veiculo v = new Veiculo(200);
         v.setMarca("VW");
         v.setModelo("FOX");
         v.setAno(2020);
         v.setPlaca("HGB-8989");
-        v.setVelocidadeMaxima(200);
         v.acelerar(10);
         System.out.println(v.getVelocidade());
         v.acelerar(50);
@@ -37,19 +36,23 @@ public class TesteVeiculo {
 
         System.out.println(v.getMotorista().getCidade().getEstado().getSigla());
 
-        Moto moto = new Moto();
+        Moto moto = new Moto(180);
         moto.setMarca("Honda");
         moto.setModelo("XHJ450");
-        moto.setVelocidadeMaxima(180);
         moto.acelerar(50);
         exibirVelocidade(moto);
 
-        Lancha lancha = new Lancha();
+        Lancha lancha = new Lancha(200);
         lancha.setMarca("Lanchex");
         lancha.setModelo("Modafoca");
         lancha.setTurbo(true);
         lancha.acelerar(100);
         exibirVelocidade(lancha);
+
+        BicicletaMotor bm = new BicicletaMotor(50);
+        bm.ligarMotor();
+        bm.desligarMotor();
+
     }
 
     // Polimorfismo de objeto

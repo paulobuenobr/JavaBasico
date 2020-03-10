@@ -4,6 +4,10 @@ public class Automovel extends Veiculo {
 
     private int numeroPortas;
 
+    public Automovel(int velocidadeMaxima) {
+        super(velocidadeMaxima);
+    }
+
     public int getNumeroPortas() {
         return numeroPortas;
     }

@@ -1,6 +1,7 @@
 package oo;
 
-public class Pessoa {
+// Classe abstrata não gera objetos e pode ter métodos abstratos
+public abstract class Pessoa {
 
     private String nome;
 
@@ -11,4 +12,8 @@ public class Pessoa {
     public void setNome(String nome) {
         this.nome = nome;
     }
+
+    // métodos abstratos não contém implementação, devendo obrigatoriamente
+    // ser implementados nas sub-classes
+    public abstract void validarRegistro();
 }

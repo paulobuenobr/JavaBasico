@@ -5,6 +5,10 @@ public class Lancha extends Veiculo {
     private boolean cabine;
     private boolean turbo;
 
+    public Lancha(int velocidadeMaxima) {
+        super(velocidadeMaxima);
+    }
+
     public boolean isCabine() {
         return cabine;
     }

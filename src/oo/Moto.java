@@ -4,6 +4,10 @@ public class Moto extends Veiculo {
 
     private boolean bau;
 
+    public Moto(int velocidadeMaxima) {
+        super(velocidadeMaxima);
+    }
+
     public boolean isBau() {
         return bau;
     }

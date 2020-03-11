@@ -1,11 +1,11 @@
 package oo;
 
-public class PessoaJuridica extends Pessoa implements IPessoa {
-    private long cnpj;
+public class PessoaFisica extends Pessoa implements IPessoa {
+    private long cpf;
 
     @Override
     public void validarRegistro() {
-        // Validar CNPJ
+        // Validar CPF
     }
 
     @Override
